@@ -1,0 +1,160 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+.btn {
+    @apply border w-full my-2 inline-block text-center font-bold text-lg py-2 rounded mb-3;
+}
+
+.auth-bg {
+    @apply h-screen bg-cover bg-center;
+}
+
+.logo {
+    @apply mx-auto w-48 h-auto;
+}
+
+.btn:focus {
+    @apply shadow-outline outline-none;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.panel-two {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.active-panel {
+    opacity: 1;
+}
+
+.btn:active {
+    @apply rounded;
+}
+
+.btn-ot-primary {
+    @apply border-primary-dark text-primary-dark;
+}
+
+.link {
+    @apply text-grey-darkest text-center font-bold no-underline;
+}
+
+.link:hover {
+    @apply text-grey-darkest;
+}
+
+.btn-primary {
+    @apply bg-primary-dark text-white;
+}
+
+form {
+    @apply p-4;
+}
+
+.form-div {
+    @apply my-2;
+}
+
+label {
+    @apply mb-2 block;
+}
+
+.form-input {
+    @apply border border-grey-dark w-full mb-2 p-2 rounded;
+}
+
+.form-input:focus {
+    @apply border-grey-darkest outline-none;
+}
+
+.auth-title {
+    @apply text-grey-darkest tracking-widest block font-bold text-2xl;
+}
+
+.auth-box {
+    @apply w-full mx-auto;
+}
+
+.login {
+    @apply w-6/12 mx-auto rounded-lg shadow-2xl bg-white py-6;
+}
+
+.register {
+    @apply w-10/12 mx-auto rounded-lg shadow-2xl bg-white py-6;
+}
+
+.btn-ot-primary:hover {
+    @apply bg-primary-dark text-white;
+}
+
+.btn-block {
+    @apply w-full;
+}
+.btn-block:focus {
+    @apply outline-none shadow-outline;
+}
+.btn-block:hover {
+    @apply text-white bg-accent-dark;
+}
+
+.btn-circle-primary {
+    @apply w-10 h-10 border-2 border-primary-dark bg-white opacity-100 rounded-full;
+}
+
+.btn-circle-transparent {
+    @apply w-12 h-12 border-2 border-primary-dark bg-transparent opacity-100 rounded-full;
+}
+
+.btn-circle-gmail {
+    @apply w-12 h-12 text-white opacity-100 rounded-full;
+}
+
+.btn-circle-twitter {
+    @apply w-12 h-12 text-white opacity-100 rounded-full;
+}
+
+.btn-circle-facebook {
+    @apply w-12 h-12 text-white opacity-100 rounded-full;
+}
+
+@tailwind utilities;
