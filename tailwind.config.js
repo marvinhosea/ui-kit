@@ -34,9 +34,12 @@ module.exports = {
                 'tw': '#4183C4',
             },
         },
+        minWidth:{
+            '7xl': '86em'
+        },
         container: {
             center: true,
-            padding: '2rem'
+            // padding: '2rem'
         },
         fontFamily: {
             display: ['Lora', 'Karla'],

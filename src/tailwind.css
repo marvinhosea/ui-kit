@@ -3,7 +3,7 @@
 @tailwind components;
 /* purgecss end ignore */
 .btn {
-    @apply border w-full my-2 inline-block text-center font-bold text-lg py-2 rounded mb-3;
+    /*@apply border w-full my-2 inline-block text-center font-bold text-lg py-2 rounded mb-3;*/
 }
 
 .auth-bg {
@@ -72,19 +72,19 @@
 }
 
 .btn-ot-primary {
-    @apply border-primary-dark text-primary-dark;
+    /*@apply border-primary-dark text-primary-dark;*/
 }
 
 .link {
-    @apply text-grey-darkest text-center font-bold no-underline;
+    /*@apply text-grey-darkest text-center font-bold no-underline;*/
 }
 
 .link:hover {
-    @apply text-grey-darkest;
+    /*@apply text-grey-darkest;*/
 }
 
 .btn-primary {
-    @apply bg-primary-dark text-white;
+    /*@apply bg-primary-dark text-white;*/
 }
 
 form {
@@ -100,15 +100,15 @@ label {
 }
 
 .form-input {
-    @apply border border-grey-dark w-full mb-2 p-2 rounded;
+    /*@apply border border-grey-dark w-full mb-2 p-2 rounded;*/
 }
 
 .form-input:focus {
-    @apply border-grey-darkest outline-none;
+    /*@apply border-grey-darkest outline-none;*/
 }
 
 .auth-title {
-    @apply text-grey-darkest tracking-widest block font-bold text-2xl;
+    /*@apply text-grey-darkest tracking-widest block font-bold text-2xl;*/
 }
 
 .auth-box {
@@ -116,15 +116,15 @@ label {
 }
 
 .login {
-    @apply w-6/12 mx-auto rounded-lg shadow-2xl bg-white py-6;
+    /*@apply w-6/12 mx-auto rounded-lg shadow-2xl bg-white py-6;*/
 }
 
 .register {
-    @apply w-10/12 mx-auto rounded-lg shadow-2xl bg-white py-6;
+    /*@apply w-10/12 mx-auto rounded-lg shadow-2xl bg-white py-6;*/
 }
 
 .btn-ot-primary:hover {
-    @apply bg-primary-dark text-white;
+    /*@apply bg-primary-dark text-white;*/
 }
 
 .btn-block {
@@ -134,15 +134,15 @@ label {
     @apply outline-none shadow-outline;
 }
 .btn-block:hover {
-    @apply text-white bg-accent-dark;
+    /*@apply text-white bg-accent-dark;*/
 }
 
 .btn-circle-primary {
-    @apply w-10 h-10 border-2 border-primary-dark bg-white opacity-100 rounded-full;
+    /*@apply w-10 h-10 border-2 border-primary-dark bg-white opacity-100 rounded-full;*/
 }
 
 .btn-circle-transparent {
-    @apply w-12 h-12 border-2 border-primary-dark bg-transparent opacity-100 rounded-full;
+    /*@apply w-12 h-12 border-2 border-primary-dark bg-transparent opacity-100 rounded-full;*/
 }
 
 .btn-circle-gmail {
