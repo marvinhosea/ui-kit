@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwind build src/tailwind.css -o css/dev/app.css",
+    "dev": "tailwind build src/tailwind.css -o assets/css/dev/app.css",
     "prod": "postcss src/tailwind.css -o css/build/app.css"
   },
   "keywords": [],
