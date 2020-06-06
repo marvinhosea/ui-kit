@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dunks</title>
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" type="text/css" href="./css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+    <style>
+        @font-face {
+            font-family: 'fontello';
+            src: url('../fonts/fontello.eot?38442943');
+            src: url('../fonts/fontello.eot?38442943#iefix') format('embedded-opentype'),
+            url('../fonts/fontello.woff?38442943') format('woff'),
+            url('../fonts/fontello.ttf?38442943') format('truetype'),
+            url('../fonts/fontello.svg?38442943#fontello') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .demo-icon
+        {
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* opacity: .8; */
+
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+
+            /* You can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Uncomment for 3D effect */
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        }
+        input:checked + svg {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="bg-dnk-darker h-screen flex-1 flex justify-between">
+    <div class="w-1/2 text-white">
+        <div class="m-8 flex flex-col">
+            <div class="bg-dnk-dark w-16 h-16 flex rounded-lg ">
+                <h3 class="text-4xl my-auto">
+                    <i class="demo-icon icon-man"></i>
+                </h3>
+            </div>
+            <div class="m-auto flex-col flex w-full">
+                <div class="mx-auto">
+                    <div>
+                        <h3 class="text-4xl font-medium tracking-wide">Hi Marvin Collins</h3>
+                        <p class="text-grey-darkest font-bold">Welcome back to the workspace, we missed you!</p>
+                        <div class="mt-8 bg-dnk-dark overflow-hidden rounded-two px-2 flex shadow-lg">
+                            <div class="flex">
+                                <i class="demo-icon icon-search-outline font-bold my-auto"></i>
+                            </div>
+                            <input type="text" class="bg-dnk-dark py-2 px-4 w-full focus:outline-none" placeholder="Search Project or Task">
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h4 class="text-2xl font-bold">Projects <span class="text-grey-darkest">(13)</span></h4>
+                        <div class="w-full mt-6 flex-1 flex justify-between">
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-pink-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        GH
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Green House</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-blue-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        AL
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Apps:Lab</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="-top-1 -right-1 float-right absolute bg-dnk-darker p-1 rounded-full">
+                                    <div class="w-4 h-4 bg-white rounded-full">
+                                        <svg id="Layer_1" class="h-4 w-4" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m121.5 64a58.043 58.043 0 0 1 -.52 7.74c-.19 1.43-.43 2.84-.73 4.23a57.56 57.56 0 0 1 -30.14 39.27c-1.18.61-2.39 1.17-3.63 1.7a57.779 57.779 0 0 1 -38.29 2.36q-1.845-.525-3.63-1.17a57.575 57.575 0 0 1 -25.15-17.83 58.8 58.8 0 0 1 -3.9-5.37 57.65 57.65 0 0 1 -6.75-46.93c.46-1.62 1-3.2 1.6-4.75v-.01a57.648 57.648 0 0 1 19.18-25.28c.94-.7 1.91-1.38 2.89-2.02a57.181 57.181 0 0 1 31.57-9.44c.67 0 1.34.01 2 .04 1.37.04 2.73.14 4.07.28a57.024 57.024 0 0 1 26.29 9.65c1.1.74 2.17 1.53 3.21 2.35a57.381 57.381 0 0 1 21.93 45.18z" fill="#e57e25"/><g fill="#241429"><path d="m106.02 100.64c-.631.723-1.289 1.439-1.956 2.128a1.75 1.75 0 1 0 2.514 2.435c.709-.732 1.409-1.494 2.08-2.262a1.75 1.75 0 0 0 -2.638-2.3z"/><path d="m64 4.75a59.25 59.25 0 1 0 37.517 105.111 1.75 1.75 0 0 0 -2.218-2.708 55.38 55.38 0 0 1 -9.1 6.043c1.275-21.4-3.975-33.689-7.861-42.768a65.952 65.952 0 0 1 -3.318-8.8 44.924 44.924 0 0 1 -1.309-15.954c14.089 5.87 27.808 15.572 41.011 29.026a55.34 55.34 0 0 1 -8.763 20.87 1.75 1.75 0 1 0 2.883 1.984 59.257 59.257 0 0 0 -48.842-92.804zm-33.749 14.916a31.625 31.625 0 0 1 .675 17.027 75.928 75.928 0 0 0 -18.3 5.658 56.056 56.056 0 0 1 17.625-22.685zm-19.389 27.475a68.476 68.476 0 0 1 19.019-6.694c-.03.09-.052.177-.083.267a70.278 70.278 0 0 1 -3.941 8.586c-4.81 9.449-11.2 22.051-10.518 41.86a55.627 55.627 0 0 1 -4.477-44.02zm8.411 50.1c-2.387-22.567 4.59-36.308 9.7-46.353a72.563 72.563 0 0 0 4.134-9.044c.238-.7.448-1.388.641-2.072a77.9 77.9 0 0 1 16.437-.666c-6.747 21.534-8.669 46.973-5.882 77.041a56.021 56.021 0 0 1 -25.03-18.906zm59.845-25.435c4.08 9.53 9.136 21.361 7.452 43.156a55.611 55.611 0 0 1 -38.636 2.418c-2.992-30.632-1.075-56.348 5.838-77.957a85.36 85.36 0 0 1 20.59 4.925 48.228 48.228 0 0 0 1.27 18.168 68.409 68.409 0 0 0 3.486 9.29zm-2.962-34.93a23.329 23.329 0 0 0 -1.2 3.961 88.828 88.828 0 0 0 -20.056-4.812 117.086 117.086 0 0 1 6.645-15.386 1.75 1.75 0 1 0 -3.1-1.619 120.979 120.979 0 0 0 -7.114 16.664c-.247-.019-.493-.043-.74-.06a81.274 81.274 0 0 0 -15.995.5 34.66 34.66 0 0 0 -1.41-18.555 55.42 55.42 0 0 1 30.814-9.319c.284 0 .564.017.847.021-.8 1.189-1.588 2.386-2.337 3.589a1.751 1.751 0 0 0 .57 2.41 1.713 1.713 0 0 0 .92.26 1.758 1.758 0 0 0 1.49-.82c1.087-1.77 2.256-3.517 3.455-5.229a55.379 55.379 0 0 1 25.684 8.97c-8.756 4.585-15.42 11.549-18.473 19.425zm2.1 5.225a21.575 21.575 0 0 1 1.144-3.906c2.95-7.61 9.65-14.283 18.456-18.447a55.682 55.682 0 0 1 21.894 44.252 56.437 56.437 0 0 1 -.365 6.41c-13.226-13.088-26.979-22.557-41.129-28.31z"/><path d="m104.376 29.317a1.75 1.75 0 1 0 -2.653 2.282 49.954 49.954 0 0 1 10.432 19.881 1.75 1.75 0 0 0 3.388-.881 53.481 53.481 0 0 0 -11.167-21.282z"/></g></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col bg-red-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        LF
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Leta Food</h4>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6 flex-1 flex justify-between">
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-indigo-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        WS
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Work Space</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="-top-1 -right-1 float-right absolute bg-dnk-darker p-1 rounded-full">
+                                    <div class="w-4 h-4 bg-white rounded-full"></div>
+                                </div>
+                                <div class="flex flex-col bg-orange-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        SN
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Ship Ninja</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-yellow-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        DK
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">DroidConKE</h4>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6 flex-1 flex justify-between">
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="-top-1 -right-1 float-right absolute bg-dnk-darker p-1 rounded-full">
+                                    <div class="w-4 h-4 bg-white rounded-full"></div>
+                                </div>
+                                <div class="flex flex-col bg-purple-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        DI
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Dunk It</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-green-600 w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        CO
+                                    </h3>
+                                </div>
+                                <h4 class="text-md mt-4 text-center font-medium text-grey-darkest">Covid19</h4>
+                            </div>
+                            <div class="flex-col flex relative pr-1 pt-1">
+                                <div class="flex flex-col bg-dnk-dark w-24 h-24 rounded-lg">
+                                    <h3 class="text-white text-2xl font-bold m-auto">
+                                        5+
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-1/2 bg-white overflow-hidden rounded-lg m-6">
+        <div class="mx-16 py-12 px-10">
+            <div class="">
+                <div class="flex justify-between">
+                    <h3 class="text-dnk-darker text-4xl font-bold">Leta Food</h3>
+                    <div class="">
+                        <div class="flex">
+                            <div class="rounded-full p-1 bg-white">
+                                <img src="./1.jpeg" class="w-10 h-10 object-cover rounded-full" alt="">
+                            </div>
+                            <div class="rounded-full p-1 bg-white -ml-4">
+                                <img src="./2.jpeg" class="w-10 h-10 object-cover rounded-full" alt="">
+                            </div>
+                            <div class="rounded-full p-1 bg-white -ml-4">
+                                <img src="./3.jpeg" class="w-10 h-10 object-cover rounded-full" alt="">
+                            </div>
+                            <div class="rounded-full bg-white p-1 -ml-4">
+                                <img src="./4.jpeg" class="w-10 h-10 object-cover rounded-full" alt="">
+                            </div>
+                            <div class="rounded-full my-auto flex-col w-10 h-10 p-1 flex bg-gray-500 ml-4">
+                                <div class=" rounded-full w-full h-full bg-white flex m-auto">
+                                    <h3 class="m-auto font-bold text-xl">+</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-2 text-grey-darkest">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="mt-16">
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="text-dnk-darker font-bold text-xl">Today</h3>
+                        <div class="text-grey-darkest">
+                            <i class="fa fa-ellipsis-h fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <hr>
+                    </div>
+                    <div class="mt-2">
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0" checked>
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Create initial layout for homepage</p>
+                            </div>
+                            <div class="bg-green-200 w-32 px-6 text-green-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                Approved
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0" checked>
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Fixing icons transparent background</p>
+                            </div>
+                            <div class="bg-blue-200 w-32  px-6 text-blue-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                In Progress
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0" checked>
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Fixing icons transparent background</p>
+                            </div>
+                            <div class="bg-blue-200 w-32  px-6 text-blue-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                In Progress
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0" checked>
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Create initial layout for homepage</p>
+                            </div>
+                            <div class="bg-blue-200 w-32  px-6 text-blue-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                In Progress
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0">
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Discussion regarding workflow improvement</p>
+                            </div>
+                            <div class="bg-orange-200 w-32 px-6 text-orange-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                In Review
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0">
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Create quotation for app redesign</p>
+                            </div>
+                            <div class="bg-gray-200 w-32  px-6 text-gray-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                Waiting
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <div class="flex justify-between">
+                        <h3 class="text-dnk-darker font-bold text-xl">Upcoming</h3>
+                        <div class="text-grey-darkest">
+                            <i class="fa fa-ellipsis-h fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <hr>
+                    </div>
+                    <div class="mt-2">
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0">
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Create initial layout for homepage</p>
+                            </div>
+                            <div class="bg-gray-200 w-32  px-6 text-gray-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                Waiting
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 p-1 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0">
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Discussion regarding workflow improvement</p>
+                            </div>
+                            <div class="bg-gray-200 w-32  px-6 text-gray-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                Waiting
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 relative bg-white border-2 rounded-full border-dnk-darker flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                                    <input type="checkbox" class="w-full h-full opacity-0">
+                                    <svg class="fill-current hidden w-4 h-4 absolute text-green-700 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-md">Fixing icons transparent background</p>
+                            </div>
+                            <div class="bg-gray-200 w-32  px-6 text-gray-900 text-sm font-bold my-auto overflow-hidden rounded-full text-center">
+                                Waiting
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute rounded-lg bottom-0 float-right right-0 bg-purple-600 mr-16 mb-16 p-4 w-16 h-16">
+        <div class="flex">
+            <h3 class="text-2xl font-bold m-auto text-white">+</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

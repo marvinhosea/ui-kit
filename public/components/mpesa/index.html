@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mpesa</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <style>
+        .demo-icon
+        {
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* opacity: .8; */
+
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+
+            /* You can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Uncomment for 3D effect */
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        }
+    </style>
+</head>
+<body class="bg-yellow-200">
+<div class="h-screen flex">
+    <div class="m-auto w-11/12 md:w-1/4 bg-owl rounded-lg pt-12 relative">
+        <div class="flex w-8 h-8 bg-yellow-200 rounded-full -top-1 float-right -right-1 absolute">
+            <div class="bg-owl  w-6 h-6 rounded-full m-auto flex">
+                <svg class="fill-current text-white w-4 h-4 m-auto pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+            </div>
+        </div>
+        <div class="overflow-hidden rounded-lg">
+            <h3 class="text-center text-lg font-bold text-white">Add Payment Method</h3>
+            <h3 class="text-center text-2xl font-bold mt-6 text-success">
+                <i class="text-2xl demo-icon icon-mpesa"></i> <span class="text-white">Mpesa</span>
+            </h3>
+            <div class="flex flex-col mt-16 mb-16 px-4 md:px-16">
+                <div>
+                    <p class="text-grey-darkest text-xl">Mpesa Name (Optional)</p>
+                    <input type="text" class="w-full bg-owl text-white focus:outline-none border-b-2 border-grn  py-1 text-xl font-medium">
+                </div>
+                <div class="mt-8">
+                    <p class="text-grey-darkest text-xl">Phone Number</p>
+                    <input type="text" class="w-full bg-owl text-white focus:outline-none border-b-2 border-grn py-1 text-xl font-medium">
+                </div>
+            </div>
+            <div class="bg-grn">
+                <button type="button" class="text-center bg-grn w-full py-8 text-white tracking-wide font-bold text-2xl">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

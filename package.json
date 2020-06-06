@@ -1,10 +1,10 @@
 {
-  "name": "afrikons",
+  "name": "UI-KIT",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwind build src/tailwind.css - css/dev/app.css",
+    "dev": "tailwind build src/tailwind.css -o css/dev/app.css",
     "prod": "postcss src/tailwind.css -o css/build/app.css"
   },
   "keywords": [],

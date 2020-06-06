@@ -39,7 +39,7 @@ module.exports = {
         },
         container: {
             center: true,
-            // padding: '2rem'
+            padding: '2rem'
         },
         fontFamily: {
             display: ['Lora', 'Karla'],
