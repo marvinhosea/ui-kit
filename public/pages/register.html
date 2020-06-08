@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap"
+    />
+  </head>
+
+  <body
+    class="bg-grey-lighter text-base text-grey-darkest relative font-normal font-body"
+  >
+    <div class="container items-center flex h-screen" id="app">
+      <div class="auth-box">
+        <div class="register lg:w-8/12 sm:w-full xs:w-full flex">
+          <div class="w-6/12 block sm:w-full xs:w-full lg:mx-8 sm:mx-4 xs:mx-4">
+            <div class="m-auto">
+              <h1 class="auth-title text-center mt-8">
+                Create Account
+              </h1>
+              <form @submit.prevent="">
+                <div
+                  id="panel-one"
+                  v-bind:class="{'active-panel': panelOneActive, hidden: !panelOneActive}"
+                >
+                  <div class="form-div">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Full name"
+                    />
+                  </div>
+                  <div class="form-div">
+                    <label for="name">Email Address</label>
+                    <input type="text" class="form-input" placeholder="Email" />
+                  </div>
+                  <div class="form-div">
+                    <label for="name">Phone number</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <button v-on:click="nextStep" class="btn btn-primary">
+                    Continue
+                  </button>
+                </div>
+                <div
+                  v-bind:class="{'active-panel': !panelOneActive, hidden: panelOneActive,
+                'animate': !panelOneActive, 'panel-two': !panelOneActive, fadeInRight: !panelOneActive
+              }"
+                >
+                  <div class="form-div">
+                    <label for="name"
+                      >Verification code
+                      <span class="float-right text-primary"
+                        >Resend code</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Verification code"
+                    />
+                  </div>
+                  <div class="form-div">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-input"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-div">
+                    <label for="password">Confirm Password</label>
+                    <input
+                      type="password"
+                      class="form-input"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <button class="btn btn-primary">
+                    Signup
+                  </button>
+                </div>
+              </form>
+              <div class="px-8">
+                <div class="flex justify-center mb-3">
+                  <a class="" href=""
+                    >Already have an account?
+                    <span class="text-colorPrimary hover:text-grey-darkest"
+                      >Login</span
+                    >
+                  </a>
+                </div>
+                <p class="text-center text-sm text-gray-700 py-3 clearfix">
+                  &copy; 2019 Apps:Lab Limited. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden m-auto lg:block md:block md:w-6/12 lg:w-8/12 bg-colorPrimary rounded-lg my-8 -mr-16"
+          >
+            <div class="text-center py-10 mx-4 text-white ">
+              <img class="logo" src="img/logo-white.png" alt="" />
+              <p class="mt-6">
+                Lorem ipsum dolor sit amet consectetur utem voluptate.
+              </p>
+            </div>
+            <div>
+              <p class="text-white font-body text-lg text-center">
+                Signup With
+              </p>
+              <div class="flex mx-4 justify-center mt-6">
+                <button class="btn btn-circle-gmail mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+                <button class="btn btn-circle-twitter mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button class="btn btn-circle-facebook mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
