@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap"
+    />
+  </head>
+
+  <body
+    class="bg-grey-lighter text-base text-grey-darkest relative font-normal font-body"
+  >
+    <div class="container items-center flex h-screen auth-bg">
+      <div class="auth-box">
+        <div class="login">
+          <div class="text-center mt-6">
+            <img class="logo" src="img/brandspai.png" alt="" />
+          </div>
+          <h1 class="auth-title text-center">
+            Login
+          </h1>
+          <form class="form" action="">
+            <div class="form-div">
+              <label for="name">Email Address</label>
+              <input type="text" class="form-input" placeholder="Email" />
+            </div>
+            <div class="form-div">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-input"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-div flex justify-between">
+              <label class="flo" for="">
+                <input type="checkbox" />
+                <span>
+                  Remember me
+                </span>
+              </label>
+              <span class="float-right">
+                <a class="text-colorPrimary text-right" href=""
+                  >Forgot password?
+                </a>
+              </span>
+            </div>
+            <button class="btn btn-primary">
+              Login
+            </button>
+          </form>
+          <div class="mb-4 px-6">
+            <div>
+              <p class="font-body text-sm text-center">
+                Or Signin with
+              </p>
+              <div class="flex mx-4 justify-center mt-4">
+                <button class="btn btn-circle-gmail mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+                <button class="btn btn-circle-twitter mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button class="btn btn-circle-facebook mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6 mb-6 flex">
+              <p class=" w-full text-center font-bold">
+                Don't have account?<span>
+                  <a
+                    class="text-colorPrimary no-underline hover:text-grey-darkest"
+                    href=""
+                    >Signup
+                  </a></span
+                >
+              </p>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-700 pt-3">
+            &copy; 2019 Apps:Lab Limited. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
